@@ -2,7 +2,7 @@ terraform {
   required_providers {
     example = {
       source  = "mbialon/example"
-      version = "1.0.0"
+      version = "1.0.1"
     }
   }
 }
@@ -18,7 +18,8 @@ terraform {
 }
 
 resource "scaffolding_example" "this" {
-  provider = example
+  provider   = example
+  read_delay = "30s"
 }
 
 #resource "aws_vpc" "this" {
