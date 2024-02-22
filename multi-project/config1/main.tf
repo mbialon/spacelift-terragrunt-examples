@@ -17,6 +17,8 @@ terraform {
   backend "s3" {}
 }
 
+resource "scaffolding_example" "this" {}
+
 #resource "aws_vpc" "this" {
 #    cidr_block = "10.0.0.0/16"
 #    tags = {
