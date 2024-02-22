@@ -7,7 +7,7 @@ terraform {
   }
 }
 
-provider "scaffolding" {}
+provider "example" {}
 
 #provider "aws" {
 #  region = "eu-west-1"
