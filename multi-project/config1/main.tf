@@ -1,3 +1,14 @@
+terraform {
+  required_providers {
+    example = {
+      source = "mbialon/example"
+      version = "1.0.0"
+    }
+  }
+}
+
+provider "scaffolding" {}
+
 #provider "aws" {
 #  region = "eu-west-1"
 #}
