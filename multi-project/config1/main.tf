@@ -19,7 +19,7 @@ terraform {
 
 resource "scaffolding_example" "this" {
   provider   = example
-  read_delay = "30s"
+  read_delay = "15s"
 }
 
 #resource "aws_vpc" "this" {
