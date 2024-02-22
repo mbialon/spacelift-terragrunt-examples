@@ -1,7 +1,7 @@
 terraform {
   required_providers {
     example = {
-      source = "mbialon/example"
+      source  = "mbialon/example"
       version = "1.0.0"
     }
   }
@@ -17,7 +17,9 @@ terraform {
   backend "s3" {}
 }
 
-resource "example_example" "this" {}
+resource "scaffolding_example" "this" {
+  provider = example
+}
 
 #resource "aws_vpc" "this" {
 #    cidr_block = "10.0.0.0/16"
