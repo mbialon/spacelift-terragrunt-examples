@@ -1,10 +1,30 @@
+terraform {
+  backend "s3" {}
+}
+
+terraform {
+  required_providers {
+    example = {
+      source  = "mbialon/example"
+      version = "1.0.2"
+    }
+  }
+}
+
+provider "example" {}
+
 #provider "aws" {
 #  region = "eu-west-1"
 #}
 
-terraform {
-  backend "s3" {}
+resource "scaffolding_example" "this" {
+  provider   = example
+  read_delay = "15s"
 }
+
+#provider "aws" {
+#  region = "eu-west-1"
+#}
 
 #resource "aws_subnet" "this" {
 #    cidr_block = "10.0.1.0/24"
