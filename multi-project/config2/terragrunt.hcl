@@ -16,10 +16,10 @@ inputs = {
 remote_state {
   backend = "s3"
   config = {
-    bucket         = "terragrunt-spacelift-state"
+    bucket         = "terragrunt-spacelift-state-mb"
     key            = "config2/terraform.tfstate"
     region         = "eu-west-1"
     encrypt        = true
-    dynamodb_table = "spacelift-terragrunt-dynamodb"
+    dynamodb_table = "spacelift-terragrunt-dynamodb-mb"
   }
 }
