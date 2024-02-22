@@ -17,9 +17,9 @@ terraform {
   backend "s3" {}
 }
 
-resource "scaffolding_example" "this" {
+resource "scaffolding_example" "test1" {
   provider   = example
-  read_delay = "15s"
+  read_delay = "10s"
 }
 
 #resource "aws_vpc" "this" {

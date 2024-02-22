@@ -17,9 +17,9 @@ provider "example" {}
 #  region = "eu-west-1"
 #}
 
-resource "scaffolding_example" "this" {
+resource "scaffolding_example" "test2" {
   provider   = example
-  read_delay = "15s"
+  read_delay = "10s"
 }
 
 #provider "aws" {
