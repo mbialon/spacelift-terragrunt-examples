@@ -22,6 +22,21 @@ resource "scaffolding_example" "test2" {
   read_delay = "10s"
 }
 
+resource "scaffolding_example" "test21" {
+  provider   = example
+  read_delay = "10s"
+}
+
+resource "scaffolding_example" "test22" {
+  provider   = example
+  read_delay = "10s"
+}
+
+resource "scaffolding_example" "test23" {
+  provider   = example
+  read_delay = "10s"
+}
+
 #provider "aws" {
 #  region = "eu-west-1"
 #}
