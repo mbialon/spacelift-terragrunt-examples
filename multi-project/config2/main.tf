@@ -19,22 +19,22 @@ provider "example" {}
 
 resource "scaffolding_example" "test2" {
   provider   = example
-  read_delay = "10s"
+  read_delay = "20s"
 }
 
 resource "scaffolding_example" "test21" {
   provider   = example
-  read_delay = "10s"
+  read_delay = "20s"
 }
 
 resource "scaffolding_example" "test22" {
   provider   = example
-  read_delay = "10s"
+  read_delay = "25s"
 }
 
 resource "scaffolding_example" "test23" {
   provider   = example
-  read_delay = "10s"
+  read_delay = "30s"
 }
 
 #provider "aws" {
