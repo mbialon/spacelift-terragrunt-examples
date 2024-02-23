@@ -1,3 +1,3 @@
 output "vpc_id" {
-  value       = 42
+  value = scaffolding_example.test1.id
 }
